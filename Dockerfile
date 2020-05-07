@@ -8,4 +8,6 @@ COPY passive.sh passive.sh
 COPY weasel.sh weasel.sh
 COPY dups.pl dups.pl
 
+RUN ls
+
 ENTRYPOINT ["make"]
