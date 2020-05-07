@@ -10,4 +10,4 @@ COPY dups.pl dups.pl
 
 RUN ls
 
-ENTRYPOINT ["make", "proof"]
+ENTRYPOINT ["make", "-C", "/", "proof"]
