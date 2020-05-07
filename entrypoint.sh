@@ -1,15 +1,9 @@
 #!/bin/sh
 
-ls
-echo "$GITHUB_WORKSPACE"
+cd "$GITHUB_WORKSPACE"
 
-FILES="$(find ${GITHUB_WORKSPACE} -type f -name "*.tex")"
+FILES="$(find . -type f -name "*.tex")"
 
-echo "$FILES"
-
-ls $FILES
-
-cd $GITHUB_WORKSPACE
-ls
-
-make -C / proof
+sh /weasel.sh ${TEXFILES}
+sh /passive.sh ${TEXFILES}
+perl /dups.pl ${TEXFILES}
