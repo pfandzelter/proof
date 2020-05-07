@@ -9,4 +9,7 @@ echo "$FILES"
 
 ls $FILES
 
+cd $GITHUB_WORKSPACE
+ls
+
 make -C / proof
