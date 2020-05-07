@@ -1,0 +1,2 @@
+ls
+make -C / proof

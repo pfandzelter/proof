@@ -7,7 +7,9 @@ COPY Makefile Makefile
 COPY passive.sh passive.sh
 COPY weasel.sh weasel.sh
 COPY dups.pl dups.pl
+COPY entrypoint.sh entrypoint.sh
 
 RUN ls
+RUN chmod +x entrypoint.sh
 
-ENTRYPOINT ["make", "-C", "/", "proof"]
+ENTRYPOINT ["/entrypoint.sh"]
