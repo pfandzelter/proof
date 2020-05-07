@@ -2,6 +2,8 @@
 FROM alpine:3.10
 
 RUN apk add --update make
+RUN apk add --update perl
+
 
 COPY passive.sh passive.sh
 COPY weasel.sh weasel.sh
