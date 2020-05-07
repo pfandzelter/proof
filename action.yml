@@ -1,0 +1,15 @@
+name: Text Proof
+description: Proof checks some basic writing mistakes in your texts.
+author: Tobias Pfandzelter, Matt Might
+inputs:
+  path:
+    description: path to files to check
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.path }}
+branding:
+  icon: check-circle
+  color: white
