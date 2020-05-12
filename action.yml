@@ -1,6 +1,0 @@
-# action.yml
-name: "Proof-read TeX files"
-description: "Proof-read TeX files"
-runs:
-  using: "docker"
-  image: "Dockerfile"
