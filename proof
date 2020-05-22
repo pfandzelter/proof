@@ -13,8 +13,8 @@ weasels="many|various|very|fairly|several|extremely\
 wordfile=""
  
 # Check for an alternate weasel file
-if [ -f $HOME/etc/words/weasels ]; then
-    wordfile="$HOME/etc/words/weasels"
+if [ -f $HOME/.words ]; then
+    wordfile="$HOME/.words"
 fi
  
 if [ -f $WORDSDIR/weasels ]; then
