@@ -29,7 +29,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Proof
-        uses: pfandzelter/proof@latest
+        uses: pfandzelter/proof@v0.1.4
         with:
           path: *.tex
 ```
